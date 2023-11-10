@@ -1,0 +1,45 @@
+.box{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    align-items: center;
+    justify-items: center;
+    height: 90vh;
+}
+
+.perfil{
+    padding: 20px 20px;
+    background-color: #131921;
+    color: white;
+    text-align: center;
+    height: 80vh;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.perfil a{
+    margin: 10px 0px;
+}
+
+.perfil h3{
+    font-family: "Arial Black";
+}
+
+.perfil p{
+    font-family: "Bahnschrift";
+}
+
+.perfil a{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: "Bahnschrift";
+}
+
+.perfil-container{
+    background-color: #0070bb;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+
+.productos{
+    margin: 0% 2%;
+}

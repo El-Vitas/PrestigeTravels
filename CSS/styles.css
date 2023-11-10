@@ -1,0 +1,164 @@
+.c-item {
+	height: 75vh;
+}
+
+.c-item-2 {
+	height: 70vh;
+}
+.c-img {
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.6);
+}
+
+.search {
+	border-top-left-radius: 50px !important;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 50px !important;
+}
+
+.search-btn {
+	border-radius: 50px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 0px;
+
+	height: 40px;
+}
+
+.filter-btn button {
+	border-radius: 10% !important;
+	background-color: #131921;
+	border-color: transparent !important;
+	color: rgb(255, 255, 255) !important;
+}
+
+.filter-btn {
+	align-items: end;
+	display: flex;
+	margin-top: 4vh;
+}
+
+.filter-btn button:hover {
+	background-color: #202834;
+	border-color: #202834;
+	color: white;
+}
+
+.filter-btn btn,
+.filter-btn btn.active,
+.filter-btn btn.show,
+.filter-btn btn:first-child:active,
+:not(.filter-btn btn-check) + .filter-btn btn:active {
+	background-color: #1c232e !important;
+	border-color: #1c232e !important;
+	color: white !important;
+	font-weight: 500;
+}
+
+.card-body-custom {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	height: 0.1%;
+	padding: 1px;
+}
+
+.advSearch {
+	margin: 2vh;
+}
+
+.nombres {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nombres h1 {
+	font-weight: bold;
+	font-size: 30px;
+	color: #1a98ff;
+}
+
+.div-carrousel {
+	background-color: #eaeaea;
+}
+
+.search-adv {
+	border-top-left-radius: 50px !important;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 50px !important;
+}
+
+.precio-paquete, .precio-hotel {
+	font-size: 4.5vh;
+	font-weight: 450;
+}
+
+.nombre-paquete .nombre-hotel {
+	font-size: 6vh;
+	font-weight: bold;
+}
+
+.atributo-paquete .atributo-hotel{
+	font-weight: 700;
+}
+
+.card-link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.card-custom {
+	/* width: 300px;
+  padding: 20px; */
+	background-color: #f8f9fa;
+	border-radius: 5px;
+	transition: box-shadow 0.3s ease;
+}
+
+.card-custom:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-nav {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.comentario {
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: #f8f9fa;
+	border: 1px solid #dee2e6;
+	border-radius: 5px;
+}
+.nombre {
+	font-weight: bold;
+}
+.fecha {
+	color: #6c757d;
+}
+
+.truncate-text {
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 16vh; /* Ajusta el valor según tus necesidades */
+}
+
+.truncate-text2 {
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 25vh
+}
+  
+  
+  
+

@@ -1,0 +1,135 @@
+.scrollable-container {
+    /* width: 300px; */
+    height: 300px;
+    overflow: scroll;
+}
+
+.rate {
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.rating,
+.rating-calidad-hotel,
+.rating-transporte,
+.rating-servicio,
+.rating-precio-calidad,
+.rating-calidad-camas,
+.rating-limpieza,
+.rating-decoracion {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.rating > input,
+.rating-calidad-hotel > input,
+.rating-transporte > input,
+.rating-servicio > input,
+.rating-precio-calidad > input,
+.rating-calidad-camas > input,
+.rating-limpieza > input,
+.rating-decoracion > input {
+    display: none;
+}
+
+.rating > label,
+.rating-calidad-hotel > label,
+.rating-transporte > label,
+.rating-servicio > label,
+.rating-precio-calidad > label,
+.rating-calidad-camas > label,
+.rating-limpieza > label,
+.rating-decoracion > label {
+    position: relative;
+    width: 1em;
+    font-size: 30px;
+    font-weight: 300;
+    color: #e28f19;
+    cursor: pointer;
+}
+
+.rating > label::before,
+.rating-calidad-hotel > label::before,
+.rating-transporte > label::before,
+.rating-servicio > label::before,
+.rating-precio-calidad > label::before,
+.rating-calidad-camas > label::before,
+.rating-limpieza > label::before,
+.rating-decoracion > label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating-calidad-hotel > label:hover:before,
+.rating-calidad-hotel > label:hover ~ label:before,
+.rating-transporte > label:hover:before,
+.rating-transporte > label:hover ~ label:before,
+.rating-servicio > label:hover:before,
+.rating-servicio > label:hover ~ label:before,
+.rating-precio-calidad > label:hover:before,
+.rating-precio-calidad > label:hover ~ label:before,
+.rating-calidad-camas > label:hover:before,
+.rating-calidad-camas > label:hover ~ label:before,
+.rating-limpieza > label:hover:before,
+.rating-limpieza > label:hover ~ label:before,
+.rating-decoracion > label:hover:before,
+.rating-decoracion > label:hover ~ label:before {
+    opacity: 1 !important;
+}
+
+.rating > input:checked ~ label:before,
+.rating-calidad-hotel > input:checked ~ label:before,
+.rating-transporte > input:checked ~ label:before,
+.rating-servicio > input:checked ~ label:before,
+.rating-precio-calidad > input:checked ~ label:before,
+.rating-calidad-camas > input:checked ~ label:before,
+.rating-limpieza > input:checked ~ label:before,
+.rating-decoracion > input:checked ~ label:before {
+    opacity: 1;
+}
+
+.rating:hover > input:checked ~ label:before,
+.rating-calidad-hotel:hover > input:checked ~ label:before,
+.rating-transporte:hover > input:checked ~ label:before,
+.rating-servicio:hover > input:checked ~ label:before,
+.rating-precio-calidad:hover > input:checked ~ label:before,
+.rating-calidad-camas:hover > input:checked ~ label:before,
+.rating-limpieza:hover > input:checked ~ label:before,
+.rating-decoracion:hover > input:checked ~ label:before {
+    opacity: 0.4;
+}
+
+.buttons {
+    top: 36px;
+    position: relative;
+}
+
+.rating-submit {
+    border-radius: 15px;
+    color: #fff;
+    height: 49px;
+}
+
+.rating-submit:hover {
+    color: #fff;
+}
+
+.rating-c {
+    pointer-events: none;
+}
+
+.rating-c input[type="radio"] {
+    display: none;
+}
+
+.rating-c label {
+    display: inline-block;
+    font-size: 1.2rem;
+    cursor: default;
+    color: #e28f19;
+    transition: color 0.3s;
+}

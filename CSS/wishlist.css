@@ -1,0 +1,19 @@
+.wishlistElement{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-items: center;
+    margin-top: 5%;
+}
+
+.wishlistElement a{
+    text-decoration: none;
+    color: black;
+}
+
+.wishlistElement img:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.wishlistElement img{
+    transition: 0.3s;
+}
