@@ -1,7 +1,7 @@
 <?php
-$server = "localhost";
-$username = "root";
-$password = "";
+$server = "db";
+$username = "user";
+$password = "pass";
 $database = "prestigetravels";
 
 $conn = new mysqli($server, $username, $password, $database);
@@ -42,4 +42,3 @@ reset($_SESSION['previous_pages']);
 
 // $mejorCalificados = $conn->query($queryProcedureCalificiados);
 
-echo "<!DOCTYPE html>";

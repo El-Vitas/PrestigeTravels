@@ -72,11 +72,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["desc"] = true;
         }
 
-        header('Location: http://localhost/Lab2/PHP/index.php');
+        header('Location: /PHP/index.php');
     }
 }
 ?>
-
+<!DOCTYPE html>
 <html>
 
 <head>

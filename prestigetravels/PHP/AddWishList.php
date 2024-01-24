@@ -1,7 +1,7 @@
 <?php
 include("connection.php");
 if(!isset($_SESSION["rut"])){
-    header('Location: http://localhost/Lab2/PHP/login.php');
+    header('Location: /PHP/login.php');
     exit();
 }
 ?>

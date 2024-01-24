@@ -1,7 +1,7 @@
 <?php
 include("connection.php");
 if(!isset($_SESSION["rut"])){
-    header('Location: http://localhost/Lab2/PHP/login.php');
+    header('Location: /PHP/login.php');
     exit();
 }
 ?>
@@ -16,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
 }
 ?>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -26,7 +26,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <?php
     include("head.php");
     ?>
-    <link rel="stylesheet" href="/Lab2/CSS/wishlist.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="/CSS/wishlist.css?v=<?php echo time(); ?>">
     <title>WishList</title>
 </head>
 
@@ -51,11 +51,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             $link = "";
             if ($value["tipo"] === "h") {
-                $link = "http://localhost/Lab2/PHP/infoHotel.php?id=".$value["id"]."";
-                $imageUrl = "/Lab2/IMG/hotel" . $imageIndex . "";
+                $link = "/PHP/infoHotel.php?id=".$value["id"]."";
+                $imageUrl = "/IMG/hotel" . $imageIndex . "";
             }else{
-                $link = "http://localhost/Lab2/PHP/infoPaquete.php?id=".$value["id"]."";
-                $imageUrl = "/Lab2/IMG/paquete" . $imageIndex . "";
+                $link = "/PHP/infoPaquete.php?id=".$value["id"]."";
+                $imageUrl = "/IMG/paquete" . $imageIndex . "";
             }
     ?>
         <div class="card" style="width: 18rem;">

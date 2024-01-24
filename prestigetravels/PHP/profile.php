@@ -33,6 +33,7 @@ $preRes = $preRes->get_result();
 $result_comment_hotel = $preRes->fetch_all(MYSQLI_ASSOC);
 
 ?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -42,8 +43,8 @@ $result_comment_hotel = $preRes->fetch_all(MYSQLI_ASSOC);
     <?php
     include("head.php");
     ?>
-    <link rel="stylesheet" href="/Lab2/CSS/profile.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="/Lab2/CSS/info.css" />
+    <link rel="stylesheet" href="/CSS/profile.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="/CSS/info.css" />
     <title>Perfil</title>
 </head>
 

@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $_SESSION["desc"] = true;
                 }
 
-                header('Location: http://localhost/Lab2/PHP/index.php');
+                header('Location: /PHP/index.php');
             }
         } else {
             $error = "usuario no encontrado";
@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>

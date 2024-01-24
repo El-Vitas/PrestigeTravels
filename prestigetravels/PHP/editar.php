@@ -158,7 +158,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION["rut"])) {
     header("Location: " . (!isset($_SESSION["rut"]) ? "login.php" : "error.php"));
 }
 ?>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -166,7 +166,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION["rut"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include("head.php"); ?>
-    <link rel="stylesheet" href="/Lab2/CSS/info.css" />
+    <link rel="stylesheet" href="/CSS/info.css" />
     <title>Editar</title>
 </head>
 

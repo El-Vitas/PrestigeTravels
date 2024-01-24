@@ -9,5 +9,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <link rel="stylesheet" href="/Lab2/CSS/styles.css" />
-    <link rel="icon" href="/Lab2/IMG/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <link rel="icon" href="/IMG/logo.png" type="image/x-icon">

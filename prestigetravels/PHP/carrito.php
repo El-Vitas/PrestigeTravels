@@ -3,7 +3,7 @@ include("connection.php");
 $total = 0;
 $error = "";
 if (!isset($_SESSION["rut"])) {
-    header('Location: http://localhost/Lab2/PHP/login.php');
+    header('Location: login.php');
     exit();
 }
 ?>
@@ -112,14 +112,14 @@ $preRes->bind_param("s", $_SESSION['rut']);
 $preRes->execute();
 $resultHotel = $preRes->get_result()->fetch_all(MYSQLI_ASSOC);
 ?>
-
+<!DOCTYPE html>
 <html>
 
 <head>
     <?php
     include("head.php");
     ?>
-    <link rel="stylesheet" href="/Lab2/CSS/carrito.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="/CSS/carrito.css?v=<?php echo time(); ?>">
     <title>carrito</title>
 </head>
 

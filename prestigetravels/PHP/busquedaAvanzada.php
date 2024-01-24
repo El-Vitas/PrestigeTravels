@@ -1,7 +1,7 @@
 <?php
 include("connection.php");
 ?>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,7 +12,7 @@ include("connection.php");
     <?php
     include("head.php");
     ?>
-    <link rel="stylesheet" href="/Lab2/CSS/info.css" />
+    <link rel="stylesheet" href="/CSS/info.css" />
     <title>Busqueda avanzada</title>
 </head>
 

@@ -1,7 +1,7 @@
 <?php
 include("connection.php");
 ?>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -45,7 +45,7 @@ include("connection.php");
                             $modal = ($index == 0) ? "modal" : "";
                             $url_tipo = ($item["tipo"] == "hotel") ? "infoHotel.php?id=" . $item["id"] : "infoPaquete.php?id=" . $item["id"];
                             $imageIndex = ($item["id"]) % 3;
-                            $url_img = ($item["tipo"] == "hotel") ? "/Lab2/IMG/hotel" . $imageIndex : "/Lab2/IMG/paquete"  . $imageIndex;
+                            $url_img = ($item["tipo"] == "hotel") ? "/IMG/hotel" . $imageIndex : "/IMG/paquete"  . $imageIndex;
                         ?>
                             <div class="carousel-item <?php echo $activeClass ?> c-item">
                                 <img src="<?php echo $url_img ?>.jpg" class="d-block w-100 c-img" alt="Slide <?php echo ($index + 1) ?>">
@@ -92,7 +92,7 @@ include("connection.php");
                             $modal_cal = ($index == 0) ? "modal" : "";
                             $url_tipo = ($item_cal["tipo"] == "hotel") ? "infoHotel.php?id=" . $item_cal["id"] : "infoPaquete.php?id=" . $item_cal["id"];
                             $imageIndex = ($item_cal["id"]) % 3;
-                            $url_img = ($item_cal["tipo"] == "hotel") ? "/Lab2/IMG/hotel" . $imageIndex : "/Lab2/IMG/paquete"  . $imageIndex;
+                            $url_img = ($item_cal["tipo"] == "hotel") ? "/IMG/hotel" . $imageIndex : "/IMG/paquete"  . $imageIndex;
 
                             $precio = ($item_cal["tipo"] == "hotel") ? "Precio por noche" : "Precio";
                         ?>

@@ -18,8 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 		FROM paquetes
 		LEFT JOIN paquetes_hotel ON paquetes.id_paquete = paquetes_hotel.id_paquete
 		LEFT JOIN hoteles ON paquetes_hotel.id_hotel = hoteles.id_hotel
-		GROUP BY paquetes.id_paquete
-		HAVING (paquetes.fecha_llegada = ? OR ? = "")
+		-- GROUP BY paquetes.id_paquete, hoteles.ciudad
+		WHERE (paquetes.fecha_llegada = ? OR ? = "")
 		AND (paquetes.fecha_salida = ? OR ? = "")
 		AND (paquetes.nombre LIKE ? OR ? = "")
 		AND (hoteles.ciudad LIKE ? OR ? = "")
@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 		LEFT JOIN paquetes_hotel ON paquetes.id_paquete = paquetes_hotel.id_paquete
 		LEFT JOIN hoteles ON paquetes_hotel.id_hotel = hoteles.id_hotel
         LEFT JOIN paquetes_usuario ON paquetes_usuario.id_paquete = paquetes.id_paquete
-		GROUP BY paquetes.id_paquete
+		GROUP BY paquetes.id_paquete, hoteles.ciudad
 		HAVING (paquetes.fecha_llegada = ? OR ? = "")
 		AND (paquetes.fecha_salida = ? OR ? = "")
 		AND (paquetes.nombre LIKE ? OR ? = "")
@@ -72,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 		hoteles.precio_por_noche, AVG(hotel_usuario.calificacion_total) AS calificacion
 		FROM hoteles
         LEFT JOIN hotel_usuario ON hotel_usuario.id_hotel = hoteles.id_hotel
-		GROUP BY hotel_usuario.id_hotel
+		GROUP BY hoteles.id_hotel
 		HAVING (hoteles.nombre_hotel LIKE ? OR ? = "")
 		AND (hoteles.ciudad LIKE ? OR ? = "")
         AND (hoteles.precio_por_noche BETWEEN IF(? = "",0,?) AND IF(?="",(SELECT MAX(hoteles.precio_por_noche) FROM hoteles),?))
@@ -90,7 +90,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 }
 
 ?>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -125,7 +125,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
 						<div class="col col-md-4 col-lg-4">
 							<div class="card">
-								<img src="/Lab2/IMG/paquete<?php echo ($id_paquete % 3) ?>.jpg" class="card-img-top" alt="..." style="height: 30vh">
+								<img src="/IMG/paquete<?php echo ($id_paquete % 3) ?>.jpg" class="card-img-top" alt="..." style="height: 30vh">
 								<div class="card-body card-body-custom">
 									<h5 class="card-title"><?php echo $paquete["nombre"] ?></h5>
 								</div>
@@ -170,7 +170,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
 						<div class="col col-md-4 col-lg-4">
 							<div class="card">
-								<img src="/Lab2/IMG/hotel<?php echo ($id_hotel % 3) ?>.jpg" class="card-img-top" alt="..." style="height: 30vh">
+								<img src="/IMG/hotel<?php echo ($id_hotel % 3) ?>.jpg" class="card-img-top" alt="..." style="height: 30vh">
 								<div class="card-body card-body-custom">
 									<h5 class="card-title"><?php echo $hotel["nombre_hotel"] ?></h5>
 								</div>

@@ -1,8 +1,9 @@
+
 <nav class="navbar navbar-expand-lg custom-nav" style="background-color: #131921;">
     <div class="container-fluid d-flex align-items-center">
         <div class="col-md-1 col-lg-1">
             <a href="index.php" class="navbar-brand">
-                <img src="/Lab2/IMG/logo.png" alt="logo" width="50" height="50" />
+                <img src='../IMG/logo.png' alt="logo" width="50" height="50" />
             </a>
         </div>
         <div class="col-md-5 col-lg-5 offset-md-2 d-flex  align-items-center">

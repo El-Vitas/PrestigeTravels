@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteRule ^$ /PHP/index.php [L]
+
+RewriteCond %{REQUEST_URI} !^/PHP
+RewriteRule \.php$ /PHP%{REQUEST_URI} [L]
+
+RewriteRule ^CSS/$ /PHP/error.php [L]
+RewriteRule ^IMG/$ /PHP/error.php [L]
+RewriteRule ^DB/$ /PHP/error.php [L]

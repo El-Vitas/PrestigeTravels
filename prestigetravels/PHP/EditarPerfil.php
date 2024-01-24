@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["correo"] = $email;
             $_SESSION["fecha_nacimiento"] = $date;
 
-            header('Location: http://localhost/Lab2/PHP/profile.php');
+            header('Location: /PHP/profile.php');
         }
     }
 }
@@ -67,11 +67,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         session_start();
         session_unset();
-        header('Location: http://localhost/Lab2/PHP/profile.php');
+        header('Location: /PHP/profile.php');
     }
 }
 ?>
-
+<!DOCTYPE html>
 <html>
 
 <head>
